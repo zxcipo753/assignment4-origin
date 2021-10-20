@@ -22,22 +22,21 @@ class DisplayFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
         layout =inflater.inflate(R.layout.fragment_display, container, false)
         model= ViewModelProvider(requireActivity()).get(ImageModel::class.java)
         val textView = layout.findViewById<TextView>(R.id.DisaplyFragTV)
         val imageView = layout.findViewById<ImageView>(R.id.DisplayFragImage)
-        model.mangaDescription.observe(viewLifecycleOwner, object : Observer<Any> {
+        model.dogDescription.observe(viewLifecycleOwner, object : Observer<Any> {
             override fun onChanged(o: Any?) {
                 textView.text = o!!.toString()
             }
         })
-        model.mangaImage.observe(viewLifecycleOwner, object : Observer<Any> {
+        model.dogImage.observe(viewLifecycleOwner, object : Observer<Any> {
             override fun onChanged(o: Any?) {
                 imageView.setImageResource(o!! as Int)
             }
         })
-        
+
 
         return layout
     }

@@ -44,18 +44,18 @@ class SelectionFragment : Fragment() {
         val size = param1?.size
         Log.d("SIZE", size.toString())
         if (size != null) {
-            val mangaData = arrayOfNulls<ImageObject>(size)
+            val dogData = arrayOfNulls<ImageObject>(size)
             for (i in 0 until size) {
-                mangaData[i] = ImageObject(param1!![i],param2!![i])
+                dogData[i] = ImageObject(param1!![i],param2!![i])
             }
-            val adapter = ImageAdapter(mangaData)
+            val adapter = ImageAdapter(dogData)
             recycle.adapter = adapter
             adapter.setOnItemClickListener(object : ImageAdapter.OnItemClickListener {
                 override fun onItemClick(position: Int) {
-                    val mangaD = (mangaData[position]!!.description)
-                    val mangaI = (mangaData[position]!!.resourceId)
-                    model.mangaDescription(mangaD)
-                    model.mangaImage(mangaI)
+                    val dogD = (dogData[position]!!.description)
+                    val dogI = (dogData[position]!!.resourceId)
+                    model.dogDescription(dogD)
+                    model.dogImage(dogI)
                 }
             })
             recycle.layoutManager = GridLayoutManager(layout.context, 3)

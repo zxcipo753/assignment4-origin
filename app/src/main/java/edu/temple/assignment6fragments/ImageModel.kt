@@ -4,16 +4,16 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 open class ImageModel: ViewModel() {
-    val mangaDescription: MutableLiveData<String> by lazy{
+    val dogDescription: MutableLiveData<String> by lazy{
         MutableLiveData<String>()
     }
-    fun mangaDescription(item:String){
-        mangaDescription.value=item
+    fun dogDescription(item:String){
+        dogDescription.value=item
     }
-    val mangaImage: MutableLiveData<Int> by lazy{
+    val dogImage: MutableLiveData<Int> by lazy{
         MutableLiveData<Int>()
     }
-    fun mangaImage(item:Int){
-        mangaImage.value=item
+    fun dogImage(item:Int){
+        dogImage.value=item
     }
 }

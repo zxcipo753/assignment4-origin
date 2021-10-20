@@ -9,13 +9,13 @@
         android:id="@+id/rcvImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/MangaView"
-        android:padding="5dp"
+        android:contentDescription="Dog name"
+        android:padding="15dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/blackclover" />
+        tools:srcCompat="@drawable/chihuahua" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

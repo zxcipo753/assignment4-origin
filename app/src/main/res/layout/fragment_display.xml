@@ -11,8 +11,10 @@
         android:id="@+id/DisaplyFragTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:text="Description!"
+        android:layout_marginBottom="-50dp"
+        android:text="Chihuahua"
+        android:textColor="#AE3A3A"
+        android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/DisplayFragImage"
         app:layout_constraintEnd_toEndOf="@+id/DisplayFragImage"
         app:layout_constraintStart_toStartOf="@+id/DisplayFragImage" />
@@ -26,6 +28,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79" />
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
