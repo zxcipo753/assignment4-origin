@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             R.drawable.bodercollie,R.drawable.bodercollie)
         selectionFrag = SelectionFragment.newInstance(dogName,dogImage)
         displayFrag = DisplayFragment()
-        supportFragmentManager.beginTransaction()
+        supportFragmentManager.beginTransaction() //transaction used here
             .add(R.id.frgContainer1, selectionFrag)
             .add(R.id.frgContainer2,displayFrag)
             .commit()

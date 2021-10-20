@@ -63,6 +63,7 @@ class SelectionFragment : Fragment() {
 
     }
     companion object {
+        //factory method used
         fun newInstance(param1: Array<String>, param2: IntArray) =
             SelectionFragment().apply {
                 arguments = Bundle().apply {
